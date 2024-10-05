@@ -686,8 +686,8 @@ span {
     transform: rotateZ(45deg);
     perspective: 1000px;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     color: #fff;
   }
     .spinner:before,
