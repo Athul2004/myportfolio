@@ -69,9 +69,9 @@ const typed = new Typed('.multiple-text', {
 // Add this to your existing script.js
 
 function closepreloader(){
-            document.getElementById("preloader").style.display = 'none';
-        }
-        window.addEventListener("load",function(){
-            setTimeout(closepreloader, 3000);
-            
-        });
+    document.getElementById("preloader").style.display = 'none';
+}
+window.addEventListener("load",function(){
+    setTimeout(closepreloader, 3000);
+    
+});
