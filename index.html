@@ -203,33 +203,28 @@
 
         </div>
     </section> 
-    <!-- contact section design -->
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span></h2>
+<!-- contact section design -->
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form action="https://api.web3forms.com/submit" method="POST">
-            <div class="input-box">
-                
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="12fc2016-6db9-4bfb-8e41-d0db0b075f12">
 
-            </div>
-            
-            
-         
-            <div class="input-box">
-                
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
-    
-            </div>
-            <input type="hidden" name="access_key" value="12fc2016-6db9-4bfb-8e41-d0db0b075f12">
-            <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Sent Message" class="btn">
-            
-            
-        </form>
-    </section>
+        <div class="input-box">
+            <input type="text" name="full_name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+        </div>
+
+        <div class="input-box">
+            <input type="number" name="mobile_number" placeholder="Mobile Number" required>
+            <input type="text" name="email_subject" placeholder="Email Subject" required>
+        </div>
+
+        <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+
+        <input type="submit" value="Send Message" class="btn">
+    </form>
+</section>
     <!-- footer design -->
     <footer class="footer">
         <div class="footer-text">
