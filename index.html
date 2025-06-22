@@ -18,63 +18,86 @@
     </div>
 
 
-    <!-- header design -->
-     <header class="header">
-        <a href="#" class="logo">Portfolio</a>
-    
-        <i class='bx bx-menu' id="menu-icon"></i>
+ <!-- Add this to your HTML where you want the background (usually right after body tag) -->
+<div id="vanta-background">
+  <!-- Your existing header and content will go here -->
+  <!-- header design -->
+  <header class="header">
+    <a href="#" class="logo">Portfolio</a>
 
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#experience">Experience</a>
-            <a href="#services">Skills</a>
-            <a href="#project">Project</a>
-            <a href="#contact">Contact</a>
-        </nav>
-     </header>
+    <i class='bx bx-menu' id="menu-icon"></i>
 
-    <!-- home section design -->
-     <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hello, It's Me</h3>
-            <h1>Athul S</h1>
-            <h3>And I'm a <span class="multiple-text"></span></h3>
-            <p> Electronics enthusiast specializing in embedded systems and VLSI design.
-Driven to build efficient, real-time solutions from silicon to system. </p>
-            <div class="social-media">
-                <a href="https://github.com/Athul2004"><i class='bx bxl-github'></i></a>
-                <a href="https://x.com/AthulS68354"><i class='bx bxl-twitter' ></i></a>
-                <a href="https://www.instagram.com/athul___s____/"><i class='bx bxl-instagram' ></i></a>
-                <a href="https://www.linkedin.com/in/athul-s-1638a1227/"><i class='bx bxl-linkedin' ></i></a>
-                <a href="https://wa.me/919188127331?text=Hello"><i class='bx bxl-whatsapp'></i></a>
-                <a href="tel:+919188127331"><i class='bx bx-phone'></i></a>
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#services">Skills</a>
+      <a href="#project">Project</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-            </div>
-            <a href="https://drive.google.com/file/d/1csl-lgpRxyfddKhRMyrlOsqFrwNGqY9B/view?usp=sharing" class="btn">Download CV</a>
-        </div>
-     
-        <div class="home-img">
-            <img src="image/home.png" alt="">
-        </div>
-    </section>
-    <!-- about section design -->
-    <section class="about" id="about">
-        <div class="about-img">
-          <img src="image/about.png" alt="">  
-        </div>
+  <!-- home section design -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <h3>Hello, It's Me</h3>
+      <h1>Athul S</h1>
+      <h3>And I'm a <span class="multiple-text"></span></h3>
+      <p> Electronics enthusiast specializing in embedded systems and VLSI design.
+        Driven to build efficient, real-time solutions from silicon to system. </p>
+      <div class="social-media">
+        <a href="https://github.com/Athul2004"><i class='bx bxl-github'></i></a>
+        <a href="https://x.com/AthulS68354"><i class='bx bxl-twitter'></i></a>
+        <a href="https://www.instagram.com/athul___s____/"><i class='bx bxl-instagram'></i></a>
+        <a href="https://www.linkedin.com/in/athul-s-1638a1227/"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://wa.me/919188127331?text=Hello"><i class='bx bxl-whatsapp'></i></a>
+        <a href="tel:+919188127331"><i class='bx bx-phone'></i></a>
+      </div>
+      <a href="https://drive.google.com/file/d/1csl-lgpRxyfddKhRMyrlOsqFrwNGqY9B/view?usp=sharing" class="btn">Download CV</a>
+    </div>
 
-        <div class="about-content">
-            <h2 class="heading">About <span>Me</span></h2>
-            
-            <p>I'm studied Electronics and Communication Engineering at College of Engineering Chengannur and i specializing both EMBEDDED Development and VLSI Devolopment. 
-                our key skills, focusing on both embedded and VLSI.
-                
-            </p>
-            
-        </div>
-    </section>
+    <div class="home-img">
+      <img src="image/homec.png" alt="">
+    </div>
+  </section>
+
+  <!-- about section design -->
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="image/about.png" alt="">
+    </div>
+
+    <div class="about-content">
+      <h2 class="heading">About <span>Me</span></h2>
+      <p>I'm studied Electronics and Communication Engineering at College of Engineering Chengannur and i specializing both EMBEDDED Development and VLSI Devolopment. 
+        our key skills, focusing on both embedded and VLSI.
+      </p>
+    </div>
+  </section>
+</div>
+
+<!-- Add these scripts at the end of your body -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+<script>
+  // Initialize Vanta.js after the page loads
+  document.addEventListener('DOMContentLoaded', function() {
+    VANTA.NET({
+      el: "#vanta-background",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x1ad9e3,
+      backgroundColor: 0x151925,
+      showDots: false
+    });
+  });
+</script>
 <!-- Education -->
 <section class="education" id="education">
 <div class="timeline">
@@ -166,7 +189,7 @@ Driven to build efficient, real-time solutions from silicon to system. </p>
 
 
             <div class="portfolio-box">
-                <img src="image/enrgymeter.jpg" alt="">
+                <img src="image/s.png" alt="">
                 <div class="portfolio-layer">
                     <h4>Mini Project</h4>
                     <p> SMART ENERGY GUARDIAN USING IOT</p>
@@ -175,53 +198,20 @@ Driven to build efficient, real-time solutions from silicon to system. </p>
             </div>
 
             <div class="portfolio-box">
-                <img src="image/Tink.png" alt="">
+                <img src="image/d.png" alt="">
                 <div class="portfolio-layer">
-                    <h4>Embedded</h4>
-                    <p> My Circuits Projects.Pls try desktop</p>
+                    <h4>CIRCUIT DESIGN</h4>
+                    <p> LCD,AC,AIC.Pls try desktop</p>
                     <a href="https://tinkercadcircuit.vercel.app"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
 
             <div class="portfolio-box">
-                <img src="image/al.png" alt="">
+                <img src="image/r.png" alt="">
                 <div class="portfolio-layer">
-                    <h4>Embedded</h4>
+                    <h4>RASPBERRY PI PICO</h4>
                     <p> Burglar alarm using Rsapberry pi pico </p>
                     <a href="https://github.com/Athul2004/Burglar--alarm"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="image/portfolio1.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p> This site for searching smoothie cakes. </p>
-                    <a href="https://www.figma.com/proto/cM8Yo2Rx8bU52Pfejm3oxt/Smoothies-(Community)?type=design&node-id=39-71&t=iuVnAQzzZf4Mu0fe-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A3&show-proto-sidebar=1"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-
-        
-            <div class="portfolio-box">
-                <img src="image/portfolio2.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p> TVA Tempad from Loki series </p>
-                    <a href="https://www.figma.com/proto/bPCiTFeAKKRLTI2ijSYjFZ/Loki-TVA-TemPad-(Community)?page-id=8%3A78&node-id=72-2830&viewport=-422%2C1033%2C0.47&t=g1DfiIAseVxEjnv3-1&scaling=min-zoom&content-scaling=fixed"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-
-        
-
-
-                
-            <div class="portfolio-box">
-                <img src="image/portfolio3.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    
-                    <p> Both Android and IOS app to search for Non Veg food items like pizza, Burger etc.</p>
-                    <a href="https://www.figma.com/proto/LcUVU4zh2E5DzBFZbHcdDZ/Foody-app-(Community)?type=design&node-id=1-2&t=7phAAL5Ixy9oNLEr-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
 
@@ -234,15 +224,13 @@ Driven to build efficient, real-time solutions from silicon to system. </p>
 
     <form action="https://api.web3forms.com/submit" method="POST">
         <input type="hidden" name="access_key" value="12fc2016-6db9-4bfb-8e41-d0db0b075f12">
-
+        
         <div class="input-box">
-            <input type="text" name="full_name" placeholder="Full Name" required>
-            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="text" name="name" placeholder="Your Name" required>
         </div>
-
+        
         <div class="input-box">
-            <input type="number" name="mobile_number" placeholder="Mobile Number" required>
-            <input type="text" name="email_subject" placeholder="Email Subject" required>
+            <input type="email" name="email" placeholder="Your Email" required>
         </div>
 
         <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>

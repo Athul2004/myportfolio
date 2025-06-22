@@ -323,9 +323,8 @@ span {
 }
 
 .contact form .input-box {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: block; /* Changed from flex to block */
+    margin-bottom: 0.7rem;
 }
 
 .contact form .input-box input,
@@ -339,15 +338,15 @@ span {
     margin: .7rem 0;
 }
 
-.contact form .input-box input {
+/* Removed the 49% width rule since we don't need side-by-side inputs anymore */
+/* .contact form .input-box input {
     width: 49%;
-}
+} */
 
 .contact form .btn {
     margin-top: 2rem;
     cursor: pointer;
-}
-
+} /* Optional: makes button full width */
 
 .footer {
     display: flex;
