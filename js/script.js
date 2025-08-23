@@ -52,6 +52,18 @@ ScrollReveal({
    
 });
 
+// Reveal education timeline items from the left
+ScrollReveal().reveal('.education .timeline-item', { 
+    origin: 'left', 
+    interval: 200 
+});
+
+// Reveal experience timeline items from the right
+ScrollReveal().reveal('.experience .timeline-item', { 
+    origin: 'right', 
+    interval: 200 
+});
+
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
 ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom'});
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left'});
