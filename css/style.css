@@ -408,6 +408,162 @@ span {
     color: var(--second-bg-color);
     box-shadow: 0 0 1rem var(--main-color);
 }
+/* Timeline Section Styles */
+.timeline {
+  position: relative;
+  margin: 60px auto 0 auto;
+  padding-left: 0;
+  width: 92%;
+  max-width: 800px;
+}
+
+.timeline .heading {
+  margin-bottom: 40px;
+  color: var(--main-color);
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 36px;
+  padding-left: 44px;
+}
+
+.timeline-icon {
+  position: absolute;
+  left: 0;
+  top: 18px;
+  width: 18px;
+  height: 18px;
+  background: var(--main-color);
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 3px var(--second-bg-color);
+}
+
+.timeline-icon.cec {
+  background: #22c55e;
+}
+
+.timeline-icon.exp {
+  background: var(--main-color);
+}
+
+.timeline-content {
+  background: var(--second-bg-color);
+  padding: 18px 22px 16px 22px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+  position: relative;
+  z-index: 1;
+}
+
+.timeline-content:hover {
+  transform: translateY(-4px) scale(1.01);
+}
+
+.timeline-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  display: block;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.timeline-content h2 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--main-color);
+  margin: 2px 0 1px 0;
+  letter-spacing: 0.5px;
+}
+
+.timeline-content h3 {
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 5px 0 2px 0;
+  letter-spacing: 0.2px;
+}
+
+.timeline-content p {
+  font-size: 0.98rem;
+  color: #bdbdbd;
+  margin: 4px 0 0 0;
+  line-height: 1.5;
+  font-size: 1.18rem;
+}
+
+.timeline-content strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+.timeline-item .timeline-content ul {
+  margin: 8px 0 8px 0;
+  padding-left: 18px;
+  list-style-type: disc;
+}
+
+.timeline-item .timeline-content ul li {
+  font-size: 1.4rem;
+  color: #bdbdbd;
+  margin-bottom: 2px;
+  line-height: 1.4;
+}
+
+.timeline-item .timeline-content a {
+  color: #0ef;
+  text-decoration: underline;
+  word-break: break-all;
+  transition: color 0.2s;
+  font-size: 1.4rem;
+}
+
+.timeline-item .timeline-content a:hover {
+  color: #22c55e;
+}
+
+/* Experience section background and timeline-content color */
+.experience {
+    background: #323846;
+}
+.experience .timeline-content {
+    background: #151925;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .timeline {
+    width: 99%;
+    padding-left: 0;
+  }
+  .timeline-item {
+    padding-left: 28px;
+  }
+  .timeline-logo {
+    width: 32px;
+    height: 32px;
+  }
+  .timeline-content {
+    padding: 12px 7px 10px 7px;
+  }
+  .timeline-content h2,
+  .timeline-content h3,
+  .timeline-content p,
+  .timeline-item .timeline-content ul li,
+  .timeline-item .timeline-content a {
+    font-size: 1.5rem;
+  }
+}
+
 /* BREAKPOINT */
 
 @media (max-width: 1200px) {
@@ -622,7 +778,7 @@ span {
 }
 
 .timeline-content h2 {
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: 600;
   color: var(--main-color);
   margin: 5px 0 2px 0;
@@ -636,7 +792,7 @@ span {
 }
 
 .timeline-content p {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   color: #bdbdbd;
   margin: 5px 0 0 0;
 }
@@ -690,7 +846,73 @@ span {
     }
 }
 
+/* Normal .btn style for repo and certificate buttons in Education and Experience section */
+.ext-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
 
+.ext-link {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: var(--main-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem var(--main-color);
+  font-size: 1.6rem;
+  color: var(--second-bg-color);
+  letter-spacing: .1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: .5s ease;
+  border: none;
+}
+
+.ext-link.cert {
+  background: var(--main-color); /* Removed green, now same as main color */
+  color: var(--second-bg-color);
+  box-shadow: 0 0 1rem var(--main-color);
+}
+
+.ext-link i {
+  font-size: 2rem;
+  color: inherit;
+  margin-right: 0.7rem;
+}
+
+.ext-link:hover,
+.ext-link.cert:hover {
+  box-shadow: none;
+  background: var(--second-bg-color);
+  color: var(--main-color);
+}
+.ext-link,
+.ext-link.cert {
+  color: #fff !important;
+}
+
+
+
+/* Responsive: stack buttons on small screens */
+/* 📱 Mobile (max 600px) */
+@media (max-width: 600px) {
+  .ext-links {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .ext-link {
+    padding: 0.8rem 1.8rem;
+    font-size: 1.3rem;
+    border-radius: 3rem;
+  }
+
+  .ext-link i {
+    font-size: 1.6rem;
+    margin-right: 0.5rem;
+  }
+}
 /* Add this to your existing styles.css */
 
 /* Preloader */
