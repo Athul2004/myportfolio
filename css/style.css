@@ -740,6 +740,10 @@ span {
   background: #00FF00; /* Green for Experience and CEC */
 }
 
+.timeline-icon.entri {
+  background: #00FF00; /* Green for Experience and CEC */
+}
+
 .experience {
     background: #323846; /* Change this color as you like */
 }
