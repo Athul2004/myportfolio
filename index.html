@@ -318,15 +318,49 @@
 
         <div class="portfolio-container">
 
-            <div class="portfolio-box">
-                <img src="image/ai_main.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>AI Smart energy guardian
-                    </h4>
-                    <p> Comming soon.. </p>
-                    <a href="https://github.com/Athul2004/Energy_data_acquisition_with_custom_dsp"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
+<div class="portfolio-box">
+    <img src="image/ai_main.png" alt="AI Smart Energy Guardian">
+
+    <div class="portfolio-layer">
+        <h4>AI Smart Energy Guardian</h4>
+
+        <p>
+            Advanced AI-powered energy monitoring and appliance-level analytics system.
+            Project details and live demo coming soon.
+        </p>
+
+        <a href="#" onclick="openComingSoon()">
+            <i class='bx bx-link-external'></i>
+        </a>
+    </div>
+</div>
+
+<script>
+function openComingSoon() {
+    document.body.innerHTML = `
+        <div style="
+            margin:0;
+            height:100vh;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            background:#0f172a;
+            color:white;
+            font-family:Arial,sans-serif;
+            text-align:center;
+        ">
+            <h1 style="font-size:60px; margin-bottom:10px;">
+                Coming Soon
+            </h1>
+
+            <p style="opacity:0.7; font-size:18px;">
+                AI Smart Energy Guardian project page is under construction.
+            </p>
+        </div>
+    `;
+}
+</script>
 
             <div class="portfolio-box">
                 <img src="image/stm32_mini_project.png" alt="">
