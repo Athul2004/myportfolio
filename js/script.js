@@ -71,7 +71,7 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right'});
 
 /*====== typed js =========*/
 const typed = new Typed('.multiple-text', {
-    strings: ['Embedded System Engineer'],
+    strings: ['Embedded Software Engineer','Embedded Hardware Engineer'],
     typeSpeed: 50,
     backSpeed: 50,
     backDelay: 1000,
