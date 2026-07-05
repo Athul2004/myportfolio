@@ -737,7 +737,7 @@ span {
   box-shadow: 0 0 0 4px var(--second-bg-color);
 }
 .timeline-icon.cec {
-  background: #00FF00; /* Green for Experience and CEC */
+  background: var(--main-color); /* Green for Experience and CEC */
 }
 
 .timeline-icon.entri {
