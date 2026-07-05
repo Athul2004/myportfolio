@@ -745,11 +745,21 @@ span {
 }
 
 .experience {
-    background: #323846; /* Change this color as you like */
+    background: #151925; /* Change this color as you like */
 }
 /* Change timeline-content background only in Experience section */
 .experience .timeline-content {
-    background: #151925; /* <-- Your desired color */
+    background: #323846; /* <-- Your desired color */
+}
+
+/* Change background only in Education section */
+.education {
+  background: #323846;
+}
+
+/* Change timeline card background only in Education section */
+.education .timeline-content {
+  background: #151925;
 }
 
 .timeline-icon.exp {
