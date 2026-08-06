@@ -741,7 +741,11 @@ span {
 }
 
 .timeline-icon.entri {
-  background: #00FF00; /* Green for Experience and CEC */
+  background: var(--main-color); /* blue for Experience entri */
+}
+
+.timeline-icon.dominate {
+  background: #00FF00; /* Green for Experience dominate */
 }
 
 .experience {
